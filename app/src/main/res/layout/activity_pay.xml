@@ -39,4 +39,11 @@
         android:layout_height="wrap_content"
         android:text="Ok" />
 
+    <Button
+        android:id="@+id/button16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:text="Button" />
+
 </LinearLayout>
