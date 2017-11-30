@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fci.delite.OrderSignup">
+
+    <EditText
+        android:id="@+id/txtAddress"
+        android:layout_width="147dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Address"
+        tools:layout_editor_absoluteY="330dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <EditText
+        android:id="@+id/txtPhone"
+        android:layout_width="147dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Phone"
+        tools:layout_editor_absoluteY="262dp"
+        android:layout_below="@+id/txtAddress"
+        android:layout_alignStart="@+id/txtUserName"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <EditText
+        android:id="@+id/txtUserName"
+        android:layout_width="147dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="User Name"
+        tools:layout_editor_absoluteY="37dp"
+        android:layout_alignBaseline="@+id/unameTxt"
+        android:layout_alignBottom="@+id/unameTxt"
+        android:layout_toStartOf="@+id/btnSubmit"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <EditText
+        android:id="@+id/unameTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/txtPhone"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="779dp"
+        tools:layout_editor_absoluteY="262dp" />
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="147dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Email"
+        tools:layout_editor_absoluteY="184dp"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/txtUserName"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <EditText
+        android:id="@+id/txtPass"
+        android:layout_width="147dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Password"
+        tools:layout_editor_absoluteY="105dp"
+        android:layout_alignTop="@+id/PassTxt"
+        android:layout_alignStart="@+id/txtEmail"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/passInput"
+        android:layout_marginRight="8dp"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <EditText
+        android:id="@+id/addressInput"
+        android:layout_width="188dp"
+        android:layout_height="51dp"
+        android:layout_alignBottom="@+id/txtAddress"
+        android:layout_alignStart="@+id/unameTxt"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="16dp"
+        android:layout_toEndOf="@+id/btnSubmit"
+        android:ems="10"
+        android:inputType="phone"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toRightOf="@+id/txtPhone"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="261dp" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Creat Account"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addressInput"
+        app:layout_constraintVertical_bias="0.669" />
+
+    <EditText
+        android:id="@+id/emailInput"
+        android:layout_width="187dp"
+        android:layout_height="53dp"
+        android:layout_alignBottom="@+id/txtEmail"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/txtEmail"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toRightOf="@+id/txtEmail"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteX="181dp"
+        tools:layout_editor_absoluteY="180dp" />
+
+    <EditText
+        android:id="@+id/passInput"
+        android:layout_width="189dp"
+        android:layout_height="49dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteY="105dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteX="179dp" />
+
+    <EditText
+        android:id="@+id/addressInput"
+        android:layout_width="190dp"
+        android:layout_height="53dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:inputType="textMultiLine|textPostalAddress"
+        app:layout_constraintLeft_toRightOf="@+id/txtAddress"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="330dp" />
+
+    <EditText
+        android:id="@+id/unameInput"
+        android:layout_width="188dp"
+        android:layout_height="49dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintLeft_toRightOf="@+id/txtUserName"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteX="177dp"
+        tools:layout_editor_absoluteY="38dp" />
+
+</android.support.constraint.ConstraintLayout>

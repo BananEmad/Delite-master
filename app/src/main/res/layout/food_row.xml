@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/foodNext"
+        android:layout_marginStart="12dp"
+        app:srcCompat="@drawable/ic_account_circle_black_24dp"
+        android:id="@+id/foodimage" />
+
+    <TextView
+        android:id="@+id/foodTypeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/foodNext"
+        android:layout_marginStart="30dp"
+        android:layout_toEndOf="@+id/foodimage"
+        android:text="TextView"
+        android:textAlignment="textStart"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/foodNext"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="16dp"
+        app:srcCompat="@drawable/ic_chevron_right_black_24dp" />
+
+</RelativeLayout>
